@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+}
+
+.view-mobile {
+    display: block;
+    @include respond-to(mid) {
+        display: none;
+    }
+}
+.view-desktop {
+    display: none;
+    @include respond-to(mid) {
+        display: block;
+    }
+}

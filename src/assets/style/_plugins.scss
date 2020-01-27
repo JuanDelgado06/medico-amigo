@@ -1,0 +1,28 @@
+.drawer-mobile {
+    background: $c-default !important;
+    outline: none;
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // height: 76vh;
+    }
+    .el-menu-item {
+        width: 100%;
+        text-align: center;
+        &:hover {
+            background: $c-accent !important;
+        }
+        a {
+            color: $c-dark;
+            font-size: 1.6rem;
+            font-family: $font-default;
+            font-weight: 700;
+        }
+        .active--exact  {
+            color: $c-dark-hover;
+            border: none;
+        }
+    }
+}

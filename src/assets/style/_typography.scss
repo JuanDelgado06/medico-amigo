@@ -1,0 +1,67 @@
+@import url("https://use.typekit.net/jdh7noy.css");
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Turret+Road:400,700,800&display=swap&subset=latin-ext');
+// font-family: 'Inter', sans-serif;
+$font-default: paralucent, sans-serif;
+$font-nice: 'Inter', sans-serif;
+$font-code:  'Turret Road', cursive;
+body {
+    font-family: $font-default;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+p, span, ul, li, a {
+    font-family: $font-nice;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5 {
+    transition: color .6s;
+    margin: 2rem 0 1rem;
+    font-family: $font-default;
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+h1 {
+margin-top: 0;
+font-size: 1.802em;
+}
+
+h2 {font-size: 1.602em;}
+
+h3 {font-size: 1.424em;}
+
+h4 {font-size: 1.266em;}
+
+h5 {font-size: 1.125em;}
+
+.small {font-size: 0.889em;}
+p {
+    font-size: 0.889rem;
+    opacity: .9;
+    @media screen and (min-width: 600px) {
+        font-size: 1em;
+    }
+}
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+a {
+    color: $c-secondary;
+    text-decoration: none;
+    font-family: $font-nice;
+    font-size: 1em;
+    font-weight: 600;
+    @media screen and (min-width: 600px) {
+        font-size: 1.2rem;
+    }
+}
