@@ -47,7 +47,7 @@ export default {
         margin: 0;
         text-transform: uppercase;
         text-align: center;
-        color: $c-dark;
+        color: $c-primary;
         font-size: 1.8rem;
         font-family: $font-nice;
         font-weight: 700;

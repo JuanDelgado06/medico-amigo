@@ -96,14 +96,14 @@ export default {
 }
 .nav-link {
   margin-left: 20px;
-  color: $c-dark;
+  color: $c-primary;
     &:hover {
       color: $c-dark-hover;
       border-color: $c-dark-hover;
       }
   }
   .active--exact {
-    border-bottom: 2px solid $c-dark;
+    border-bottom: 2px solid $c-primary;
   }
   .logo {
     padding-right: 0.5rem;
@@ -122,7 +122,7 @@ export default {
     font-size: 1.4rem;
     font-weight: 600;
     // text-align: center;
-    color: $c-dark;
+    color: $c-primary;
     display: block;
     @include respond-to(small) {
       font-size: 1.6rem;
