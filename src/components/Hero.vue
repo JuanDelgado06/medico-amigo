@@ -34,7 +34,7 @@ export default {
     @include respond-to-height(mid) {
         height: 28vh;
     }
-    @include respond-to(mid) {
+    @include respond-to(semiBig) {
         // background-image: url(../assets/images/hero-medico.png);
         background-position:right;
         background-image: url(../assets/images/hero-medico-2.jpg);

@@ -7,7 +7,10 @@
           <g-link to="/" class="nav-link">
             <div class="flex">
               <g-image src="~/assets/images/logo.svg" alt="logo medico amigo" class="logo"/>
-              <span class="logo-text">{{ $static.metadata.siteName }}</span>
+              <div class="header-title">
+                <p class="logo-text">{{ $static.metadata.siteName }}</p>
+                <p class="slogan-text">Comprometidos con su salud</p>
+              </div>
             </div>
           </g-link>
         </strong>
@@ -30,7 +33,7 @@
       :visible.sync="drawer"
       :direction="direction"
       custom-class="drawer-mobile"
-      size="44%">
+      size="46%">
 
       <el-menu background-color="#f1f1f1" class="menu-mobile">
         <el-menu-item index="1">
@@ -83,7 +86,6 @@ export default {
 @import '@/assets/style/index';
 .header {
   background: $c-default;
-
   &-menu {
     display: flex;
     justify-content: space-between;
@@ -101,23 +103,36 @@ export default {
       }
   }
   .active--exact {
-    // color: $c-dark-hover;
-    // border-bottom: 2px solid $c-dark-hover;
     border-bottom: 2px solid $c-dark;
   }
   .logo {
     padding-right: 0.5rem;
-    width: 2.8rem;
+    width: 2.6rem;
     transition: all .1s ease-out;
     &:hover {
       width: 3rem;
     }
+    @include respond-to(small) {
+      width: 2.8rem;
+    }
   }
   .logo-text {
+    margin: 0;
     font-family: $font-nice;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
+    // text-align: center;
     color: $c-dark;
-    align-self: flex-end;
+    display: block;
+    @include respond-to(small) {
+      font-size: 1.6rem;
+    }
+  }
+  .slogan-text {
+    margin: 0;
+    margin-top: -.4rem;
+    font-size: 0.7rem;
+    padding: 0;
+    color: $c-dark;
   }
 </style>

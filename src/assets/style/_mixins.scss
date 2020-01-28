@@ -1,5 +1,5 @@
 //Media Queries
-$mini: 320px;
+$mini: 321px;
 $small-mobile: 400px;
 $mobile: 600px;
 $table: 768px;
@@ -8,6 +8,9 @@ $desktop: 1224px;
 
 
 @mixin respond-to($media) {
+    @if $media == mini {    
+        @media only screen and (min-width: $mini) { @content; }
+    }
     @if $media == little {
         @media only screen and (min-width: $small-mobile) { @content; }
     }
@@ -20,7 +23,7 @@ $desktop: 1224px;
     @if $media == semiBig {
         @media only screen and (min-width: $laptop) { @content; }
     }
-    @else if $media == big {
+    @if $media == big {
         @media only screen and (min-width: $desktop) { @content; }
     }
 }

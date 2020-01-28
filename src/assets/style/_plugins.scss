@@ -1,22 +1,28 @@
 .drawer-mobile {
     background: $c-default !important;
     outline: none;
+    .el-drawer__header {
+        padding: 1rem;
+        margin: 0;
+    }
     .menu-mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
         // height: 76vh;
     }
     .el-menu-item {
         width: 100%;
         text-align: center;
+        padding: 0 !important;
+        margin: 0 !important;
         &:hover {
             background: $c-accent !important;
         }
         a {
             color: $c-dark;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-family: $font-default;
             font-weight: 700;
         }

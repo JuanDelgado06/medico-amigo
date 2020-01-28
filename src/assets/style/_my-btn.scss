@@ -12,7 +12,10 @@
         width: 2.8rem;
     }
     &-bar {
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: $c-dark;
+        @include respond-to(small) {
+            font-size: 2.5rem;
+        }
     }
 }
