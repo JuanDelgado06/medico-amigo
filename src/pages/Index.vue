@@ -6,7 +6,7 @@
     <div class="container-image">
   
       <g-image src="~/assets/images/background-section.svg" alt="fondo azul claro y oscuro"  class="back-section"/>
-      <g-image src="~/assets/images/background-section-mobile.svg" alt="fondo azul claro y oscuro"  class="back-section-mobile"/>
+      <!-- <g-image src="~/assets/images/background-section-mobile.svg" alt="fondo azul claro y oscuro"  class="back-section-mobile"/> -->
 
       <div class="section">
       
