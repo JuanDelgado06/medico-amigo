@@ -83,6 +83,9 @@ export default {
             font-size: .9rem;
             margin: .6rem auto;
         }
+        @media screen  and(min-width: 370px) {
+            margin: .9rem auto;
+        }
         @include respond-to(little) {
             width: 80%;
             margin: 1rem auto;
