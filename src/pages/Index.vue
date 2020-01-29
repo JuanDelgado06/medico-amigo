@@ -12,7 +12,7 @@
       
         <div class="section-container">
           <div class="section-content">
-            <h2 class="title-home">¿ Que es Médico Amigo ?</h2>
+            <h2 class="title-home">¿ Quienes somos ?</h2>
             <p>
               Somos una empresa de médicos generales y especialistas con amplia trayectoria en el cauca, enfocados en el cuidado del paciente y su familia, logrando un equilibrio fisico y mental
               a través de tratamientos convecionales y alternativos.
@@ -63,7 +63,7 @@ p {
   display: inline-block;
   text-align: center;
   width: 100%;
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
 }
 .back-section {
   width: 100%;
