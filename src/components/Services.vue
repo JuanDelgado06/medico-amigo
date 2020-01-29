@@ -54,7 +54,7 @@ export default {
 }
 .service {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
     margin: 0;
     @include respond-to(small) {
@@ -62,8 +62,9 @@ export default {
         grid-template-columns: repeat(3, 1fr);
     }
     &-title {
+        font-size: 1rem;
         color: $c-default;
-        padding: 2rem 1rem;
+        // padding: 2rem 1rem;
         // @extend .title;
     }
     &-content {

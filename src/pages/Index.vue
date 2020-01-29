@@ -6,7 +6,7 @@
     <div class="container-image">
   
       <g-image src="~/assets/images/background-section.svg" alt="fondo azul claro y oscuro"  class="back-section"/>
-      <!-- <g-image src="~/assets/images/background-section-mobile.svg" alt="fondo azul claro y oscuro"  class="back-section-mobile"/> -->
+      <g-image src="~/assets/images/background-section-2.svg" alt="fondo azul claro y oscuro"  class="back-section-mobile"/>
 
       <div class="section">
       
@@ -64,9 +64,6 @@ p {
   text-align: center;
   width: 100%;
   margin: 1rem 0;
-  // @include respond-to(small) {
-  //   margin: 1rem 0 1rem 0;
-  // }
 }
 .back-section {
   width: 100%;
