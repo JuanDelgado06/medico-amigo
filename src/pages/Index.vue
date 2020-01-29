@@ -2,39 +2,37 @@
   <Layout>
 
     <Hero/>
-      <div class="container-image">
-    
-        <g-image src="~/assets/images/background-section.svg" alt="logo medico amigo"  class="back-section"/>
-        <g-image src="~/assets/images/background-section-mobile.svg" alt="logo medico amigo"  class="back-section-mobile"/>
-        
-        <div class="section">
-        
-          <div class="section-container">
-            <div class="section-content">
-              <h2 class="title-home">¿ Que es Médico Amigo ?</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas optio impedit, vel quis laborum culpa! Quos non minus consequatur labore culpa dolores itaque, alias quia harum esse explicabo, illum debitis.
-              Exercitationem qui numquam, quo quaerat dolore quasi facere illum maiores voluptatem cumque libero saepe perferendis possimus. Quae ducimus voluptates in, voluptate nesciunt quia fuga distinctio, nihil fugit et voluptas praesentium.
-              </p>
-            </div>
+
+    <div class="container-image">
+  
+      <g-image src="~/assets/images/background-section.svg" alt="fondo azul claro y oscuro"  class="back-section"/>
+      <g-image src="~/assets/images/background-section-mobile.svg" alt="fondo azul claro y oscuro"  class="back-section-mobile"/>
+
+      <div class="section">
+      
+        <div class="section-container">
+          <div class="section-content">
+            <h2 class="title-home">¿ Que es Médico Amigo ?</h2>
+            <p>
+              Somos una empresa de médicos generales y especialistas con amplia trayectoria en el cauca, enfocados en el cuidado del paciente y su familia, logrando un equilibrio fisico y mental
+              a través de tratamientos convecionales y alternativos.
+            </p>
           </div>
-
-          <!-- <div class="section-container">
-            <div class="section-content">
-              <h2 class="title-home">¿ Porque utilizar Médico Amigo ?</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ut ducimus maiores et consectetur facere harum labore modi repudiandae. Exercitationem deserunt ipsam velit esse laboriosam ducimus adipisci soluta tenetur quam.Enim expedita veritatis tempora tempore ut nisi soluta cumque repudiandae sit laboriosam, possimus odio assumenda minima debitis, eum modi ea dolor a quod! Libero voluptatibus similique, provident laudantium laboriosam dolore?</p>
-            </div>
-          </div> -->
-
         </div>
-
+        
       </div>
+    </div>
+
+    <Services/>
+
   </Layout>
 </template>
 
 <script>
 import Hero from '~/components/Hero.vue'
+import Services from '~/components/Services.vue'
 export default {
-  components: { Hero },
+  components: { Hero, Services },
   metaInfo: {
     title: 'Inicio'
   }
@@ -45,13 +43,7 @@ export default {
 .title-home {
   text-align: center;
   color: $c-default;
-  font-size: 1.2rem;
-  @include respond-to(mini) {
-    font-size: 1.5rem;
-  }
-  @include respond-to(little) {
-    font-size: 2rem;
-  }
+  @extend .title;
 }
 p {
   color: $c-default;
@@ -72,9 +64,9 @@ p {
   text-align: center;
   width: 100%;
   margin: 1rem 0;
-  @include respond-to(small) {
-    margin: 2rem 0;
-  }
+  // @include respond-to(small) {
+  //   margin: 1rem 0 1rem 0;
+  // }
 }
 .back-section {
   width: 100%;
@@ -100,7 +92,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;    
+    @include respond-to(small) {
+      margin-bottom: 4rem;
+    }
   }
   &-content {
     width: 90%;
@@ -113,9 +108,6 @@ p {
     }
     @include respond-to(semiBig) {
       width: 70%;
-    }
-    @include respond-to(big) {
-      // width: 90%;
     }
   }
 }

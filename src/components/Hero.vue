@@ -8,7 +8,11 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            name: 'Hero',
+        }
+    },
 }
 </script>
 
@@ -18,8 +22,8 @@ export default {
     width: 100%;
     height: 35vh;
     display: flex;
-    background: $c-default;
-    background-image: url(../assets/images/hero-medico-2.jpg);
+    // background: $c-default;
+    background-image: url(../assets/images/hero-medico-2.png);
     background-size: cover;
     background-position:top;
     background-repeat: no-repeat;
@@ -37,7 +41,7 @@ export default {
     @include respond-to(semiBig) {
         // background-image: url(../assets/images/hero-medico.png);
         background-position:right;
-        background-image: url(../assets/images/hero-medico-2.jpg);
+        background-image: url(../assets/images/hero-medico-2.png);
         height: 87vh;
     }
     

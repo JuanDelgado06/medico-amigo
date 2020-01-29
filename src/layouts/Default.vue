@@ -98,8 +98,8 @@ export default {
   margin-left: 20px;
   color: $c-primary;
     &:hover {
-      color: $c-dark-hover;
-      border-color: $c-dark-hover;
+      color: $c-secondary;
+      border-color: $c-secondary;
       }
   }
   .active--exact {
@@ -121,7 +121,6 @@ export default {
     font-family: $font-nice;
     font-size: 1.4rem;
     font-weight: 600;
-    // text-align: center;
     color: $c-primary;
     display: block;
     @include respond-to(small) {
@@ -133,6 +132,6 @@ export default {
     margin-top: -.4rem;
     font-size: 0.7rem;
     padding: 0;
-    color: $c-dark;
+    color: $c-primary;
   }
 </style>
